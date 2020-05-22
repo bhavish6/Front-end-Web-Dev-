@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Jquery Ui</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+        <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css">
+    </head>
+
+
+    <body>
+        <div id="mydiv">
+        
+         <h2>Introduction To Jquery UI</h2>
+        //<img src="img/batting.jpeg" width="200px" id="myimg" title="bat">
+        </div>
+        <div id="messagebox" title="Messagebox">*/
+            <h2>Dummy Title</h2>
+        </div>
+        <br> 
+
+    <div id="panels"  style="width: 100%;">
+        <<h2>MESSI</h2>
+         <div> <p>Best Player In the world.Magician.GOAT
+           Nothing Is impossible with him on the field.
+         </p>
+            <img src="img/messi.jpg">
+        </div>
+        <h2>RONALDO</h2>
+        <div><p>Beast. Never say die attitude.Most Hardworking
+            The match is never over until hes there
+        </p>
+            <img src="img/ronaldo.jpg">
+        </div>
+        <h2>NEYMAR</h2>
+        <div> <p>Samba.Most Skillful player in the world.Treat to watch</p>
+            <img src="img/neymar.jpg">
+        </div>
+    </div>
+        
+      <!--</div>-->  
+    </body>
+ <script src="JS/jquery.js" type="text/javascript" ></script>
+ <script src="jquery-ui/jquery-ui.js" type="text/javascript" ></script>
+ <script>
+
+$("img").tooltip({
+    track:true,
+    content:"BhavishKing",
+    show:{effect:"explode",duration:2000 },//by default fade in fade out when hovering 
+    hide:{effect:"pulsate",duration:2000}                                     //Others consistof pulsate,highlight,explode,blind    
+});
+
+$("#panels").accordion(
+    {heightStyle: 'panel'})
+</script>
+
+</html>

@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Jquery Ui</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+        <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css">
+    </head>
+
+
+    <body>
+        <div id="mydiv">
+                
+                <h2>Introduction To Jquery UI</h2>
+                <div id="bat">
+               //<img src="img/batting.jpeg" width="200px" id="myimg" title="bat" ></div>
+               </div>
+               <div id="messagebox" title="Messagebox">*/
+                   <h2>Dummy Title</h2>
+               
+            <div id="sort">
+                <div class="cube">
+                    <h3>Cube 1</h3>
+                </div>
+                <div class="cube">
+                    <h3>Cube 2</h3>
+                </div>
+             </div>       
+         </div>
+               <br> 
+        
+    </body>
+ <script src="JS/jquery.js" type="text/javascript" ></script>
+ <script src="jquery-ui/jquery-ui.js" type="text/javascript" ></script>
+ <script>
+$("#bat").draggable({
+    //axis : "y",
+    //containment : "parent",//contains the element in the div
+    opacity : 0.5,//makes the user understand it has been held
+    cursor :"grabbing",
+   // grid : [300,300],//moves it only 300 pixels not more
+    snap : true//all dragable elements stick to each other ,snapTolerance can be added too
+});
+
+
+$("#sort").sortable({
+opacity : 0.5,
+distance : 50,//sorting will happen only after moving 50px
+//delay : 300,//sorting will happen after this much time
+cursor : "grabbing",
+});//sortable can only be added to the parent div ie in which they belong
+</script>
+
+</html>

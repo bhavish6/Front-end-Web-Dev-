@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Jquery Ui</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+        <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css">
+    </head>
+
+
+    <body>
+        <h2>Message Box in jquery UI</h2>
+        <div class="mydiv" id ="first">
+        
+        <h2>Welcome To Pes 2020</h2><br>
+        <button id="btn">Click Me</button>
+        </div>
+
+        <div class ="mydiv" id="second">
+            <h3>Neymar</h3>
+            <img src="img/neymar.jpg"><br>
+            <button>Click me</button>
+        </div>
+
+
+    </body>
+ <script src="JS/jquery.js" type="text/javascript" ></script>
+ <script src="jquery-ui/jquery-ui.js" type="text/javascript" ></script>
+ <script>
+  $("#btn").click(function(){
+
+    //alert("BB");
+    $("#second").dialog({
+        title : "CUSTOM BOX",
+        draggable : true,
+        resizable : true ,
+        height : 300,
+        width : 300,
+        modal : true,//like in privacy policy ,you cannot do anything else onthe page until this is done
+
+        buttons :[
+            {
+                text : "Close",
+                icon :"ui-icon-heart",
+                click : function(){
+                    $(this).dialog("close");
+                }
+
+            }
+
+
+    
+
+        ]
+
+
+
+
+    });
+
+
+  });
+
+</script>
+
+</html>

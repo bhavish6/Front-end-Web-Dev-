@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Jquery Ui</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+        <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css">
+    </head>
+
+
+    <body>
+        <div id="mydiv">
+        
+        <h2>Autocomplete widget in Jquery UI</h2>
+        <label><b>Enter your fav city</b></label>
+        <input id="favcity" type="text" name="">
+        </div>
+
+    </body>
+ <script src="JS/jquery.js" type="text/javascript" ></script>
+ <script src="jquery-ui/jquery-ui.js" type="text/javascript" ></script>
+ <script>
+   var city =["MUMBAI","PUNE","NEW DELHI","PANJIM",'CHENNAI',"BANGLORE","NEW YORK","CHICAGO","LA","NEW JERSEY"] ;//PASS ARRAYS AS PARAMETERS,PASS AS CURLY BRACES
+
+ $("#favcity").autocomplete({
+     source : city,
+ },{
+     minLength : 2,//after 2 letters only autocomplete works
+ });     // You have to pass in an array or something from where the data is gonna be used to search
+
+</script>
+
+</html>
